@@ -1,0 +1,2436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spartan" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+
+  <title>Activities | Click Club</title>
+</head>
+<style>
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: Oswald;
+  }
+
+  .album h1,
+  .album h2,
+  .album h3,
+  .album h4,
+  .album h5,
+  .album h6 {
+    color: #e1e4ec;
+  }
+
+  p {
+    font-family: Spartan;
+  }
+
+  .nav-link {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    color: #fff;
+    border-bottom: 4px solid transparent;
+  }
+
+  .navbar-nav .nav-item:hover .nav-link {
+    color: #fff;
+    border-bottom: 4px solid #FF6633;
+  }
+
+  .navbar-nav .active {
+    border-bottom: 4px solid #FF6633;
+  }
+
+  @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+
+  .album {
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .album .font-weight-medium {
+    font-weight: 500;
+  }
+
+
+
+  .album .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+  }
+
+  .album .text-themecolor {
+    color: #316ce8;
+  }
+
+  .album h5 {
+    line-height: 22px;
+    font-size: 18px;
+  }
+
+  .album a.link {
+    color: #e1e4eb;
+  }
+
+  .album a.link:hover {
+    color: #316ce8;
+  }
+
+  .album .on-hover {
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+  }
+
+  .album .on-hover:hover {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  .album .date-pos {
+    right: 10px;
+    top: 10px;
+  }
+
+  .album .date-pos span {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .album .bg-info-gradiant {
+    background: #188ef4;
+    background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+    background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+  }
+
+  #clock-b {
+    font-weight: normal;
+  }
+</style>
+
+<body style="background-color:#000000">
+  <!-- Navbar  -->
+  <div id="overlay"></div>
+  <div id="mobile-menu" class="mobile-main-menu">
+    <ul>
+      <li class="mobile-only "><a href="./index.html">HOME</a></li>
+      <li class="mobile-only"><a href="./campus.html">CAMPUS</a></li>
+      <li class="mobile-only"><a href="./events.html">EVENTS</a></li>
+      <li class="mobile-only active"><a href="./activities.html">ACTIVITIES</a></li>
+      <li class="mobile-only"><a href="./learn_with_click.html">LEARN WITH CLICK</a></li>
+      <li class="mobile-only"><a href="./calendar.html">CALENDAR</a></li>
+      <li class="mobile-only"><a href="./achievements.html">ACHIEVEMENTS</a></li>
+      <li class="mobile-only"><a href="./team.html">TEAM</a></li>
+      <li class="mobile-only"><a href="./contact.html">CONTACT</a></li>
+      <li class="mobile-only"><a class="" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/clickclubnitrr/" role="button"
+        data-mdb-ripple-color="dark"><i class="fa fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a class="" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/clickclubnitrr/" role="button"
+        data-mdb-ripple-color="dark"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  <header class="main-header nav-active" id="navbar">
+    <div class="logo">
+      <a href="./index.html"><img src="static/Click White Logo.webp" alt="Click-Club" /></a>
+    </div>
+    <nav class=" desktop-main-menu">
+      <ul>
+        <li class=""><a href="./index.html">HOME</a></li>
+        <li class=""><a href="./campus.html">CAMPUS</a></li>
+        <li class=""><a href="./events.html">EVENTS</a></li>
+        <li class="active"><a href="./activities.html">ACTIVITIES</a></li>
+        <li class=""><a href="./learn_with_click.html">LEARN WITH CLICK</a></li>
+        <li class=""><a href="./calendar.html">CALENDAR</a></li>
+        <li class=""><a href="./achievements.html">ACHIEVEMENTS</a></li>
+        <li class=""><a href="./team.html">TEAM</a></li>
+        <li class=""><a href="./contact.html">CONTACT</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/clickclubnitrr/" role="button"
+          data-mdb-ripple-color="dark"><i class="fa fa-facebook-f"></i></a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/clickclubnitrr/" role="button"
+          data-mdb-ripple-color="dark"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hamburger Menu -->
+  <button id="menu-btn" class="hamburger" type="button">
+    <span class="hamburger-top"></span>
+    <span class="hamburger-middle"></span>
+    <span class="hamburger-bottom"></span>
+  </button>
+<!-- End Navbar  -->
+  <style>
+    .nav-pills .nav-link {
+      color: #000000;
+      background-color: #c4c3d0 !important;
+    }
+
+    .nav-pills .nav-link.active {
+      color: #000000;
+      background-color: #FF6633 !important;
+    }
+  </style>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="text-center d-flex justify-content-center me-3">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item mx-1" role="presentation">
+          <button class="nav-link active" id="pills-albums-tab" data-bs-toggle="pill" data-bs-target="#pills-albums"
+            type="button" role="tab" aria-controls="pills-albums" aria-selected="true">Albums</button>
+        </li>
+        <li class="nav-item mx-1" role="presentation">
+          <button class="nav-link" id="pills-aftermovies-tab" data-bs-toggle="pill" data-bs-target="#pills-aftermovies"
+            type="button" role="tab" aria-controls="pills-aftermovies" aria-selected="false">Aftermovies</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-albums" role="tabpanel" aria-labelledby="pills-albums-tab">
+      <div class="album">
+        <div class="container">
+          <div class="row justify-content-center">
+            <img src="media/BLACK 2.gif" style="width:min(900px,100%)" alt="album">
+            <div class="col-md-8 text-center">
+              <h2 class="font-weight-normal" style="color: #e1e4ebb4;">Click Club promotes photography and captures all the highlights of the college including college events. 
+                <br><br>Here is the glimpse of our past albums.</h2><br>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+
+            <!--2022 Start-->
+          <h4 class="my-3">2022</h4>
+          <div class="row mt-4">
+            
+            <!-- Shruti 2022 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/photo/?fbid=517390193764979&set=a.517357190434946" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="media/album/Shruti'22.jpeg" alt="album"></a>
+                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">December<span class="d-block">2</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.facebook.com/photo/?fbid=517390193764979&set=a.517357190434946" target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Shruti 2k22</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/photo/?fbid=517390193764979&set=a.517357190434946" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Traditional Day -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/p/CHvNcyCoP8H/" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="media/KRI_9482.jpg" alt="album"></a>
+                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">October<span class="d-block">31</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/p/CHvNcyCoP8H/" target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Traditional Day 2022</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.instagram.com/p/CkXuq1OI6lz/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Garba EVE -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/p/CEJy2rkAWPh/" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="media/Garba-Eve-44.webp" alt="album"></a>
+                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">October<span class="d-block">5</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/p/CEJy2rkAWPh/" target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Garba Eve 2022</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.instagram.com/p/CjUoExpr516/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Nukkad -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/p/CD_rOBIgnes/" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="media/LRM_EXPORT_20220824_162610.jpg" alt="album"></a>
+                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">November<span class="d-block">4</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://drive.google.com/drive/folders/1W8z8CZD5owl7tpJItJgJyV74WrEq1Is5?usp=share_link" target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Nukkad 2022</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.instagram.com/p/CD_rOBIgnes/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- UBA -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/p/CD_rOBIgnes/" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="media/DSC_2130.jpg" alt="album"></a>
+                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">September<span class="d-block">11</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/p/CD_rOBIgnes/" target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Unnat Bharat Abhiyan 2022</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.instagram.com/p/CiXUGFZpJIM/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+          </div>
+          </div>
+          <!--2020 Start-->
+          <h4 class="my-3">2020</h4>
+          <div class="row mt-4">
+
+            <!-- Diwali -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/p/CHvNcyCoP8H/" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/diwali'20.png" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  November<span class="d-block">18</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/p/CHvNcyCoP8H/"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Diwali 2020</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.instagram.com/p/CHvNcyCoP8H/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Quarantine Album-5 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/p/CEJy2rkAWPh/" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="media/album/q-5.png"
+                    alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">1-30</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/p/CEJy2rkAWPh/"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Qurantine Album 2020-5</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.instagram.com/p/CEJy2rkAWPh/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Quarantine Album-4 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/p/CD_rOBIgnes/" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="media/album/q-4.png"
+                    alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">1-30</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/p/CD_rOBIgnes/"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Qurantine Album 2020-4</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.instagram.com/p/CD_rOBIgnes/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quarantine Album-3 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/p/CEO836dgsNY/" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="media/album/q-3.png"
+                    alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">1-30</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/p/CEO836dgsNY/"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Qurantine Album 2020-3</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.instagram.com/p/CEO836dgsNY/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Quarantine Album-2 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/p/CEbx61JA4vj/" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/qurantine -2.png" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">1-30</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/p/CEbx61JA4vj/"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Qurantine Album 2020-2</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.instagram.com/p/CEbx61JA4vj/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Quarantine Album-1 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/p/CEYUvcSAUpi/" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/quarantine-1.png" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">1-30</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/p/CEYUvcSAUpi/"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Quarantine Album 2020-1</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.instagram.com/p/CEYUvcSAUpi/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Eclectika -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.4071506426200621&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Eclectika'20.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  May<span class="d-block">16</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.4071506426200621&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eclectika 2020</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.4071506426200621&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+
+
+          <!--2019 Start-->
+
+          <h4 class="my-3">2019</h4>
+          <div class="row mt-4">
+
+            <!-- Convocation -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.3555909181093684&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/convocation'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  December<span class="d-block">20</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.3555909181093684&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Convocation 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.3555909181093684&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Traditional Day -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.3380176138666990&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/traditional'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">31</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.3380176138666990&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Traditional Day 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.3380176138666990&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shruti -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.3373497279334876&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/shruti.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">28</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.3373497279334876&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Shruti 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.3373497279334876&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Aavartan -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.3350741748277096&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/aavartan'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">21</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.3350741748277096&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Aavartan 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.3350741748277096&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Gajanana -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.3252770831407522&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Gajanana'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">20</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.3252770831407522&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Gajanana 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.3252770831407522&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- E-summit -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.3218897268128212&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/esummit'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">7</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.3218897268128212&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">E-Summit 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.3218897268128212&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Annual Photography Workshop -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.3184827308201875&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/annualphotography'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">26</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.3184827308201875&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Annual Photography Workshop 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.3184827308201875&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Beginning -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.3107139815970625&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/begining'2019.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  July<span class="d-block">29</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.3107139815970625&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">The Beginning 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.3107139815970625&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!--Summer-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2987292637955344&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/summer.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  June<span class="d-block">15</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2987292637955344&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Summer 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2987292637955344&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Eclectika -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2832498463434763&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Eclectika'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">16</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2832498463434763&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eclectika 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2832498463434763&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Celeb Night -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2828256133858996&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/celebnite.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">14</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2828256133858996&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Celeb Nite 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2828256133858996&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Cult Night -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2823578657660077&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/cult nite.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">12</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2823578657660077&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Cult Nite 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2823578657660077&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Nrityotsav -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2726491337368810&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/nirtyoutsav'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  February<span class="d-block">28</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2726491337368810&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Nrityotsav 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2726491337368810&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Blood Donation Camp -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2709205975764013&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Blood'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  February<span class="d-block">21</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2709205975764013&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Blood Donation Camp 2019</a></h5>
+                <p class="mt-3 px-1 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2709205975764013&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Id photoshoot -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2706929622658315&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Id photoshoot'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  February<span class="d-block">20</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2706929622658315&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Id Photoshoot 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2706929622658315&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Republic Day -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2672090812808863&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/republic'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">26</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2672090812808863&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Republic Day 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2672090812808863&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Samar -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2647401728611105&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/samar'19.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">25</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2647401728611105&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Samar 2019</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2647401728611105&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+            <!--2019 End-->
+
+
+
+          </div>
+
+
+
+          <!--2018 Start-->
+          <h4 class="my-3">2018</h4>
+          <div class="row mt-4">
+            <!-- Garba Night'18 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2473723112645635&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/garbanight.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  November<span class="d-block">2</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2473723112645635&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Grand Garba Eve 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2473723112645635&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Aavartan -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2457697684248178&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Avartan'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">25</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2457697684248178&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Aavartan 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2457697684248178&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- POTW -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2430049497012997&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/POTW.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">11</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2430049497012997&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Photo of the Week 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2430049497012997&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shruti -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2416313721719908&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Shruti'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">4</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2416313721719908&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Shruti 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2416313721719908&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- E-Summit -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2382220301795917&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/E-summit.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">15</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2382220301795917&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">E-Summit 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2382220301795917&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Annual Photography Workshop -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2372714126079868&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/AnnualPhotography'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">9</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2372714126079868&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Annual Photography Workshop 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2372714126079868&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Beginning -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2298709833480298&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/beginning'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">5</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2298709833480298&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">The Beginning 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2298709833480298&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!--Ecklectika-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2095754807109136&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Ecklectika'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">9</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2095754807109136&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eclectika 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2095754807109136&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Cult Night -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2090072864343997&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Eclecticka'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">6</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2090072864343997&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Cult Night 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2090072864343997&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Salim Sulaeman -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2085762368108380&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Salim'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">3</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2085762368108380&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Salim Sulaiman 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2085762368108380&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Holi -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2049006381783979&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Holi'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">9</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2049006381783979&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Holi 2018</a></h5>
+                <p class="mt-3 px-1 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2049006381783979&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Samar -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2045097888841495&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Samar'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">3</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2045097888841495&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Samar 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2045097888841495&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!--Glimpse Ecklecktika-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.2029933363691281&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Glimpse Day.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  Feb<span class="d-block">25</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.2029933363691281&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Glimpse of Ecklectica 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.2029933363691281&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Blood Moon -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1997084286976189&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/bloodmoon.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  February<span class="d-block">2</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1997084286976189&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Blood Moon 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1997084286976189&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Republic Day -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1989881124363172&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/republicday'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">26</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1989881124363172&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Republic Day 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1989881124363172&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- convocation -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1956551514362800&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Convocation'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">4</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1956551514362800&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Convocation 2018</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1956551514362800&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!--2018 End-->
+
+          </div>
+          <!--2017 Start-->
+
+
+
+          <h4 class="my-3">2017</h4>
+          <div class="row mt-4">
+            <!-- Alumni Meet'17 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1974007519283866&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Alumni'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  December<span class="d-block">24</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1974007519283866&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Alumni Meet 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1974007519283866&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Convocation -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1956551514362800&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/convocation'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  December<span class="d-block">27</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1956551514362800&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Convocation 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1956551514362800&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Shruti -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1872566452761307&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/shruti'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  November<span class="d-block">3</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1872566452761307&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Shruti 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1872566452761307&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Aavartan at a glance -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1862813793736573&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/avartan'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">27</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1862813793736573&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Aavartan 2017 - at a glance</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1862813793736573&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Aavartan -moments -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1859537394064213&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/AnnualPhotography'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">25</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1859537394064213&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Aavartan 2017 - Moments</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1859537394064213&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Diwali -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1856706774347275&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/diwali'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">23</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1856706774347275&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Diwali 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1856706774347275&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Pre-Diwali -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1847579728593313&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/pre-diwali'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">15</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1847579728593313&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Pre-Diwali 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1847579728593313&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sankalp se sidhi -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1822501424434477&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/AnnualPhotography'18.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">25</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1822501424434477&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Sankalp Se Sidhi 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1822501424434477&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Majestic City -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1782882378396382&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/majesticcity'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">24</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1782882378396382&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Majestic City 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1782882378396382&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Independence day-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1773594722658481&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/independence'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">15</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1773594722658481&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Independence Day 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1773594722658481&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Beginning -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1772593752758578&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/begining'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">14</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1772593752758578&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">The Beginning 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1772593752758578&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Annual Photography Trip -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1581696681848287&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/photographytrip'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">29</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1581696681848287&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Annual Photography Trip 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1581696681848287&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <!--Ecklectika-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1561663553851600&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/ecklectika'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">18</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1561663553851600&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eclectika 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1561663553851600&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Cult Night -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1556406231043999&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/cultnite'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">17</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1556406231043999&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Cult Nite 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1556406231043999&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Expession -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1547519845265971&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/expression'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">6</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1547519845265971&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Expressions -The Photography Contest 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1547519845265971&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Sachin Jiggar-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1546946571989965&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/sachinjiggar'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">6</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1546946571989965&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Celeb Night 2017</a></h5>
+                <p class="mt-3 px-1 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1546946571989965&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Samar -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1535917209759568&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/samar'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  February<span class="d-block">25</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1535917209759568&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Samar 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1535917209759568&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!--Glimpse samar-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1534790193205603&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/samar'moments'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  February<span class="d-block">24</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1534790193205603&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Samar 2017 -moments</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1534790193205603&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Suzuki carnival -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1534088539942435&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/samar-suzuki carnival.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  February<span class="d-block">24</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1534088539942435&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Samar 2017 -Suzuki Carnival</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1534088539942435&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- convocation -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1518338371517452&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/convocation'17-2.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  February<span class="d-block">10</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1518338371517452&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Convocation 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1518338371517452&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Republic Day -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1500941833257106&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/republic'17.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">26</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1500941833257106&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Republic Day 2017</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1500941833257106&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!--2017 End-->
+          </div>
+
+
+          <!--2016 starts -->
+
+
+
+
+
+          <h4 class="my-3">2016</h4>
+          <div class="row mt-4">
+
+
+
+
+
+
+
+
+            <!--Alumni Meet 2016  -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1446738222010801&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/alumni.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  December<span class="d-block">29</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1446738222010801&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Alumni Meet 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1446738222010801&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Diwali 2k16 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1373996112618346&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/diwali.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  November<span class="d-block">5</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1373996112618346&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Diwali 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1373996112618346&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Avartan -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1341150645902893&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/avartan.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">7</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1341150645902893&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Aavartan 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1341150645902893&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!--  Shruti' 16-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1329295030421788&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/shruti.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">26</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1329295030421788&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Shruti 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1329295030421788&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!--E summit -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1313656891985602&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/esummit.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">11</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1313656891985602&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">E-Summit 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1313656891985602&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- INdependence day -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1285078754843416&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/ind_day.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">15</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1285078754843416&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Indpendence day 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1285078754843416&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- The beginning 2k16 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1272014542816504&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/The_begining.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">1</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1272014542816504&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">The Beginning 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1272014542816504&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pixel Lane 5 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1175189749165651&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/pixel.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">25</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1175189749165651&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Pixel Lane 5 (2016)</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1175189749165651&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!--Cult Night-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1165093473508612&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/cult.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">14</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1165093473508612&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Cult Night - Eclectika 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1165093473508612&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!--Mohit Chauhan's album-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1163619143656045&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/mohit_chouhan.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">12</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1163619143656045&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Mohit Chauhan - Eclectika 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1163619143656045&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!--Eclectika 2k16-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1162152197136073&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/eclectika.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">10</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1162152197136073&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eclectika 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1162152197136073&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <!--Samar 2k16-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1145215408829752&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Samar_2k16.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  February<span class="d-block">13</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1145215408829752&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Samar 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1145215408829752&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!--Republic Day-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1133899369961356&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/republic_day_16.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">26</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1133899369961356&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Republic Day 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1133899369961356&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!--6th convocation-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1126514574033169&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/6th_convocation.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">14</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1126514574033169&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">6th Convocation Day 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1126514574033169&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Eeire Charms -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1122638741087419&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/eeiere.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">7</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1122638741087419&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eeire Charms 2016</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1122638741087419&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <!-- 2016 Ends -->
+
+
+
+
+          </div>
+
+
+
+
+
+          <!--2015 Start-->
+          <h4 class="my-3">2015</h4>
+          <div class="row mt-4">
+            <!-- Amuni Meet'15 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1118503788167581&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Alumnimeet'15.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  December<span class="d-block">26</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1118503788167581&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Alumni Meet 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1118503788167581&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Majestic Lights -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1093285947356032&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/majesticlights.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  November<span class="d-block">17</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1093285947356032&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Majestic Lights 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1093285947356032&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Behind the Lights -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1089736321044328&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Behindlights.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  November<span class="d-block">11</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1089736321044328&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Behind The Lights 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1089736321044328&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Euphoria -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1087678091250151&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/euphoria.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  November<span class="d-block">7</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1087678091250151&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Euphoria 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1087678091250151&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Akvartan day2 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1079921962025764&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Avartan'15'd-2.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">21</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1079921962025764&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Aavartan 2015 Day2</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1079921962025764&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Avartan day1 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1079915215359772&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/avartan'15.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">20</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1079915215359772&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Aavartan 2015 Day1</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1079915215359772&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Shruti'15 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1076373912380569&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Shruti'15.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">14</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1076373912380569&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Shruti 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1076373912380569&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!--Photowalk-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1062797047071589&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/photowalk.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">19</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1062797047071589&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Photo Walk 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1062797047071589&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Annual Photography workshop -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1060911340593493&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/AnnualPhotographyworkshop'15.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">13-16</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1060911340593493&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Annual Photography Workshop 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1060911340593493&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Green Ganesha -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1058851127466181&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/greenganesha.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">11</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1058851127466181&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Green Ganesha 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1058851127466181&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Independence day -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.1041513309199963&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Independence'15.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">15</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.1041513309199963&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Independence day 2015</a></h5>
+                <p class="mt-3 px-1 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.1041513309199963&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Cult Night -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.965272966823998&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/cultNight'15.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">3</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.965272966823998&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Cult Night 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.965272966823998&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!--Ecklecktika-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.965257493492212&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Ecklectika'15.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">1-3</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.965257493492212&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eclectika 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.965257493492212&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lagori -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.965251696826125&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Lagori'15.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">4</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.965251696826125&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Lagori 2015</a></h5>
+                <p class="mt-3"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.965251696826125&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Samar'15 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.935563663128262&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Samar'15.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">23-26</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.935563663128262&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Samar 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.935563663128262&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Republic Day -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.930476300303665&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Republic'15.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">26</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.930476300303665&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Republic Day 2015</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.930476300303665&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!--2015 End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+          <!--2011 Start-->
+          <h4 class="my-3">2011</h4>
+          <div class="row mt-4">
+            <!-- Amuni Meet'11 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.328933623791272&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Alumni'11.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  December<span class="d-block">24</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.328933623791272&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Alumni Meet 2011</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.328933623791272&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Shruti'11 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.275027872515181&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/shruti'11.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">22</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.275027872515181&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Shruti 2011</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.275027872515181&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- World Photography Day -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.258158670868768&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/WorldPhotographyDay'11.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">19</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.258158670868768&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">World Photography Day 2011</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.258158670868768&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Independence Day -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.255943631090272&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/independence'11.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  August<span class="d-block">15</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.255943631090272&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Independence Day 2011</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.255943631090272&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Click Work -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.205434399474529&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Click Work'11.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">4</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.205434399474529&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Click Work 2011</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.205434399474529&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full Album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Green Fest -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.204567102894592&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Greenfest'11.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  April<span class="d-block">1</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.204567102894592&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Green Fest 2011</a></h5>
+                <p class="mt-3 px-1 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.204567102894592&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Aavartan -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.200638419954127&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/avartan'11.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">14</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.200638419954127&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Aavartan 2011</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.200382776646358&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Ecklectika cult night -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.200382776646358&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Ecklectika'11.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">14</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.200382776646358&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eclectika 2011 cult night</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.200382776646358&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ecklectika day2 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.200417913309511&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Ecklectica'11 day2.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">13</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.200417913309511&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eclectika 2011 day2</a></h5>
+                <p class="mt-3"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.200417913309511&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Ecklectika day1 -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.200406256644010&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Eclectilka'11 day1.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">12</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.200406256644010&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eclectika 2011 Day1</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.200406256644010&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+            <!-- Ecklectika prep -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/media/set/?set=a.201317363219566&type=3" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/album/Eclecktika'11 prep.jpeg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">11</span></div>
+                <h5 class="font-weight-medium mt-3"><a
+                    href="https://www.facebook.com/media/set/?set=a.201317363219566&type=3"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Eclectica 2011 Preparation</a></h5>
+                <p class="mt-3 px-2 text-truncate"></p>
+                <div class="container text-center">
+                  <a href="https://www.facebook.com/media/set/?set=a.201317363219566&type=3" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View full album</a>
+                </div>
+              </div>
+            </div>
+
+            <!--2011 End-->
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-aftermovies" role="tabpanel" aria-labelledby="pills-aftermovies-tab">
+      
+      <div class="album">
+        <div class="container">
+          <div class="row justify-content-center">
+            <img src="media/AFTERMOVIE 2.gif" style="width:min(900px,100%)" alt="aftermovies">
+            <div class="col-md-8 text-center">
+              <h2 class=" font-weight-normal" style="color: #e1e4ebb4;">Click Club promotes Videography and makes an aftermovie of the college events. 
+                <br><br>Here is the glimpse of our past albums.</h2><br>
+            </div>
+          </div>
+
+          <!--2020 Start-->
+          <h4 class="my-3"></h4>
+          <div class="row mt-4">
+
+            <!-- Shruti -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/tv/CErGHkGAScv/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/aftermovie/shruti 2k19.png" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  October<span class="d-block">19</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/tv/CErGHkGAScv/?utm_source=ig_web_copy_link"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Shruti Aftermovie 2019</a></h5>
+                <div class="container text-center my-2">
+                  <a href="https://www.instagram.com/tv/CErGHkGAScv/?utm_source=ig_web_copy_link" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View Aftermovie</a>
+                </div>
+              </div>
+            </div>
+            <!--ECLECTIKA-->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.instagram.com/tv/B60gmkYgoCc/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/aftermovie/insignia 2.0.png" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  January<span class="d-block">2</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://www.instagram.com/tv/B60gmkYgoCc/?utm_source=ig_web_copy_link"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Insignia 2.0 - Aftermovie of ECLECTIKA 2019</a></h5>
+                <div class="container text-center my-2">
+                  <a href="https://www.instagram.com/tv/B60gmkYgoCc/?utm_source=ig_web_copy_link" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View Aftermovie</a>
+                </div>
+              </div>
+            </div>
+            <!-- ECLECTIKA -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://youtu.be/y_HH2QfPDLw" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/aftermovie/insignia.png" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  February<span class="d-block">23-25</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://youtu.be/y_HH2QfPDLw"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Insignia - Aftermovie of ECLECTIKA 2018</a></h5>
+                <div class="container text-center my-2">
+                  <a href="https://youtu.be/y_HH2QfPDLw" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View Aftermovie</a>
+                </div>
+              </div>
+            </div>
+            <!-- Shruti -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://www.facebook.com/watch/?v=220386812224516&ref=sharing" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/aftermovie/Shruti'18.jpg" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  December<span class="d-block">15</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://fb.watch/cCvkhCIyKn/"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Shruti Aftermovie 2018</a></h5>
+                <div class="container text-center my-2">
+                  <a href="https://fb.watch/cCvkhCIyKn/" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View Aftermovie</a>
+                </div>
+              </div>
+            </div>
+            <!-- Shruti -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://youtu.be/0ZF0snA6iSo" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/aftermovie/eclectika 2017.png" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  September<span class="d-block">11</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://youtu.be/0ZF0snA6iSo"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link"> Iridescence - Aftermovie of ECLECTIKA 2017</a></h5>
+                <div class="container text-center my-2">
+                  <a href="https://youtu.be/0ZF0snA6iSo" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View Aftermovie</a>
+                </div>
+              </div>
+            </div>
+            <!-- Shruti -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://youtu.be/NJESQdwAN1o" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/aftermovie/shruti 2017.png" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">16</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://youtu.be/NJESQdwAN1o"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Shruti Aftermovie 2017</a></h5>
+                <div class="container text-center my-2">
+                  <a href="https://youtu.be/NJESQdwAN1o" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View Aftermovie</a>
+                </div>
+              </div>
+            </div>
+            <!-- Eclectika -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://youtu.be/KRQIVHKi2O0" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/aftermovie/insomnia.png" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  March<span class="d-block">23</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://youtu.be/KRQIVHKi2O0"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">Insomnia - Aftermovie of ECLECTIKA 2015</a></h5>
+                <div class="container text-center my-2">
+                  <a href="https://youtu.be/KRQIVHKi2O0" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View Aftermovie</a>
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- SMRITIYAN  -->
+            <div class="col-md-4 on-hover">
+              <div class="card bg-dark text-white border-0 mb-4 shadow">
+                <a href="https://youtu.be/X9rjzikPtks" target="_blank" rel="noopener noreferrer"><img class="card-img-top"
+                    src="media/aftermovie/smritiyan 12.png" alt="album"></a>
+                <div
+                  class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                  December<span class="d-block">24</span></div>
+                <h5 class="font-weight-medium mt-3"><a href="https://youtu.be/X9rjzikPtks"
+                    target="_blank" rel="noopener noreferrer" class="text-decoration-none link">SMRITIYAN 2012</a></h5>
+                <div class="container text-center my-2">
+                  <a href="https://youtu.be/X9rjzikPtks" role="button" target="_blank" rel="noopener noreferrer" class="btn btn-primary text-decoration-none linking text-white m-2">View Aftermovie</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer id="footer" class="mt-3">
+      <div class="footer-top py-3" style="background-color: #181818; color:#B8B8B8; font-size:14px;">
+        <div class="container">
+          <div class="row d-flex justify-content-center p-2">
+            <div class="col-lg-3 col-md-6 text-center"> <img src="static/Click White Logo.webp"
+                style="height:100px; width:100px;" alt="Click Club">
+              <p style="font-family:Poppins;">Click Club, the photography club of NIT Raipur. <br>
+                I dream. I frame. I live. I click.</p>
+            </div>
+            <div class="col-lg-3 col-md-6" style="text-decoration: none;">
+              <div class="text-center">
+                <h5 style="font-family:Poppins">Useful Links</h5>
+              </div>
+              <div class="d-flex justify-content-center">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <a
+                      style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank"
+                      rel="noopener noreferrer" href="./index.html">Home</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a
+                      style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank"
+                      rel="noopener noreferrer" href="./events.html">Events</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a
+                      style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank"
+                      rel="noopener noreferrer" href="./activities.html">Activities</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a
+                      style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank"
+                      rel="noopener noreferrer" href="./calendar.html">Calendar</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a
+                      style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank"
+                      rel="noopener noreferrer" href="./achievements.html">Achievements</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a
+                      style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank"
+                      rel="noopener noreferrer" href="./team.html">Team</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a
+                      style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank"
+                      rel="noopener noreferrer" href="./contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <h5 style="font-family:Poppins">Contact Us</h5>
+              <p style="font-family:Poppins">NIT Raipur, Great Eastern Road, Amanaka, Raipur, Chhattisgarh, India, IN
+                492010 <br>
+                <strong>Email:</strong> clickclub@nitrr.ac.in<br>
+              </p>
+              <div class="container d-flex justify-content-center">
+                <div class="col"><a style="color: inherit;" target="_blank" rel="noopener noreferrer"
+                    href="https://www.facebook.com/clickclubnitrr/"><i class="bi bi-facebook"></i></a></div>
+                <div class="col"><a style="color: inherit;" target="_blank" rel="noopener noreferrer"
+                    href="https://www.instagram.com/clickclubnitrr/"><i class="bi bi-instagram"></i></a></div>
+                <div class="col"><a style="color: inherit;" target="_blank" rel="noopener noreferrer"
+                    href="mailto:clickclub@nitrr.ac.in"><i class="fa fa-google"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #383838; color:#B8B8B8">
+        © 2022 Copyright: Click Club NIT Raipur
+      </div>
+      <!-- Copyright -->
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="js/base.js"></script>
+
+</html>

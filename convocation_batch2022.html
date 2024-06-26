@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spartan" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/events.css">
+
+  <title>Convocation | Batch 2022</title>
+</head>
+<script>
+    var countDownDate = new Date("Nov 2, 2022 9:00:00").getTime();
+var countdownfunction = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  document.getElementById("clock-b").innerHTML =
+  "<div class='col'>"+hours+"<br><p>Hrs</p></div><div class='col'>"+minutes+"<br><p>Mins</p></div><div class='col'>"+seconds+"<br><p>Sec</p></div>";
+  
+//   document.getElementById("clock-b").innerHTML =
+//   "<div class='col'>"+days+"<br><p>Days</p></div><div class='col'>"+hours+"<br><p>Hrs</p></div><div class='col'>"+minutes+"<br><p>Min</p></div><div class='col'>"+seconds+"<br><p>Sec</p></div>";
+  
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("clock-b").innerHTML = "LAUNCHED";
+  }
+}, 1000);
+</script>
+<body style="background-color:#f7f7f7">
+    <!-- Navbar  -->
+  <div id="overlay"></div>
+  <div id="mobile-menu" class="mobile-main-menu">
+    <ul>
+      <li class="mobile-only"><a href="./index.html">HOME</a></li>
+      <li class="mobile-only"><a href="./campus.html">CAMPUS</a></li>
+      <li class="mobile-only"><a href="./events.html">EVENTS</a></li>
+      <li class="mobile-only"><a href="./activities.html">ACTIVITIES</a></li>
+      <li class="mobile-only"><a href="./learn_with_click.html">LEARN WITH CLICK</a></li>
+      <li class="mobile-only"><a href="./calendar.html">CALENDAR</a></li>
+      <li class="mobile-only"><a href="./achievements.html">ACHIEVEMENTS</a></li>
+      <li class="mobile-only"><a href="./team.html">TEAM</a></li>
+      <li class="mobile-only"><a href="./contact.html">CONTACT</a></li>
+      <li class="mobile-only"><a class="" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/clickclubnitrr/" role="button"
+        data-mdb-ripple-color="dark"><i class="fa fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <a class="" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/clickclubnitrr/" role="button"
+        data-mdb-ripple-color="dark"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  <header class="main-header nav-active" id="navbar">
+    <div class="logo">
+      <a href="./index.html"><img src="./static/Click White Logo.webp" alt="Click-Club" /></a>
+    </div>
+    <nav class=" desktop-main-menu">
+      <ul>
+        <li class=""><a href="./index.html">HOME</a></li>
+        <li class=""><a href="./campus.html">CAMPUS</a></li>
+        <li class=""><a href="./events.html">EVENTS</a></li>
+        <li class=""><a href="./activities.html">ACTIVITIES</a></li>
+        <li class=""><a href="./learn_with_click.html">LEARN WITH CLICK</a></li>
+        <li class=""><a href="./calendar.html">CALENDAR</a></li>
+        <li class=""><a href="./achievements.html">ACHIEVEMENTS</a></li>
+        <li class=""><a href="./team.html">TEAM</a></li>
+        <li class=""><a href="./contact.html">CONTACT</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/clickclubnitrr/" role="button"
+          data-mdb-ripple-color="dark"><i class="fa fa-facebook-f"></i></a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/clickclubnitrr/" role="button"
+          data-mdb-ripple-color="dark"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hamburger Menu -->
+  <button id="menu-btn" class="hamburger" type="button">
+    <span class="hamburger-top"></span>
+    <span class="hamburger-middle"></span>
+    <span class="hamburger-bottom"></span>
+  </button>
+<!-- End Navbar  -->
+
+  <style>
+      .card-img-top{
+          max-height: 500px;
+      }
+  </style>
+  <style>
+    .countdown{
+      font-size: max(20px,2vw);
+    }
+    .conv{
+        background-image: url(./media/convocation2023.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 85vh;
+    }
+    .content{
+            background-color: black;
+            opacity: 0.6;
+            border-radius: 1vw;
+            font-family: 'Marcellus', serif;
+            text-align: center;
+            font-size: min(4vw,20px);
+            color: blanchedalmond;
+            padding: 15px;
+    }
+</style>
+<div class="conv">
+  <div class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 py-3 text-center">
+              <h1 class="title my-3" style="font-family:Poppins; color:rgb(255, 211, 158);"><b>13th Convocation</b></h1>
+              <h3 class="title my-3" style="font-family:Poppins; color:rgb(255, 211, 158);"><b>Batch 2022</b></h3>
+              <div class="none" style="height:25vh"></div>
+              <div class="content">
+                  <p class="py-2">
+                    Time leaves nothing untouched, the only residues are our vagabond memories.<br>
+We from Click Club wish our most lovable senior graduates a very best of luck and hope for a happy future!
+                  </p>
+                </div>
+                
+                <p class="py-3" style="color:rgb(255, 211, 158);font-size: min(3.6vw,20px);">Download all images from here :
+                    <a class="btn btn-primary py-3" style="color: #020202;font-family:Poppins; font-size: min(3.6vw,20px);background-color: #FF6633;border-color: #0e0e0e;" href="https://drive.google.com/drive/folders/1-ju_qdlZf8Ex4uiMea1rK898RTD4aMCi?usp=share_link" target="_blank" rel="noopener noreferrer" role="button"><strong>Download</strong></a>
+                </p>
+            </div>
+            <div class="none" style="height:2vh"></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<footer id="footer" class="">
+    <div class="footer-top py-3" style="background-color: #181818; color:#B8B8B8; font-size:14px;">
+      <div class="container">
+          <div class="row d-flex justify-content-center p-2">
+              <div class="col-lg-3 col-md-6 text-center"> <img src="static/Click White Logo.webp" style="height:100px; width:100px;" alt="Click Club">
+                  <p style="font-family:Poppins;">Click Club, the photography club of NIT Raipur. <br>
+                    I dream. I frame. I live. I click.</p>
+              </div>
+              <div class="col-lg-3 col-md-6" style="text-decoration: none;">
+                <div class="text-center">
+                  <h5 style="font-family:Poppins">Useful Links</h5>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <ul>
+                      <li><i class="bi bi-chevron-right"></i> <a style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank" rel="noopener noreferrer" href="./index.html">Home</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank" rel="noopener noreferrer" href="./events.html">Events</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank" rel="noopener noreferrer" href="./activities.html">Activities</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank" rel="noopener noreferrer" href="./calendar.html">Calendar</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank" rel="noopener noreferrer" href="./achievements.html">Achievements</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank" rel="noopener noreferrer" href="./team.html">Team</a></li>
+                      <li><i class="bi bi-chevron-right"></i> <a style="color: inherit;font-family:Poppins; text-decoration: none;" target="_blank" rel="noopener noreferrer" href="./contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center">
+                  <h5 style="font-family:Poppins">Contact Us</h5>
+                  <p style="font-family:Poppins">NIT Raipur, Great Eastern Road, Amanaka, Raipur, Chhattisgarh, India, IN 492010 <br> 
+                    <strong>Email:</strong> clickclub@nitrr.ac.in<br></p>
+                    <div class="container d-flex justify-content-center"> 
+                      <div class="col"><a style="color: inherit;" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/clickclubnitrr/"><i class="bi bi-facebook"></i></a></div>
+                      <div class="col"><a style="color: inherit;" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/clickclubnitrr/"><i class="bi bi-instagram"></i></a></div>
+                      <div class="col"><a style="color: inherit;" target="_blank" rel="noopener noreferrer" href="mailto:clickclub@nitrr.ac.in"><i class="fa fa-google"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #383838; color:#B8B8B8">
+      © 2022 Copyright: Click Club NIT Raipur
+    </div>
+    <!-- Copyright -->
+  </footer>  
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="js/base.js"></script>
+  </html>
